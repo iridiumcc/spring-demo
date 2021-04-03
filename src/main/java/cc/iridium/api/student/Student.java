@@ -1,4 +1,4 @@
-package cc.iridium.demo.student;
+package cc.iridium.api.student;
 
 import javax.persistence.*;
 import java.time.LocalDate;
