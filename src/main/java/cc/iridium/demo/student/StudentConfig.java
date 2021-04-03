@@ -17,19 +17,29 @@ public class StudentConfig {
             Student mariam = new Student(
                             "Mariam",
                             "mariam@gmail.com",
-                            LocalDate.of(2000, Month.JANUARY, 5),
-                            21
+                            LocalDate.of(2000, Month.JANUARY, 5)
             );
 
             Student felix = new Student(
                     "Felix",
                     "fpultar@gmail.com",
-                    LocalDate.of(1992, Month.JANUARY, 14),
-                    29
+                    LocalDate.of(1992, Month.JANUARY, 14)
+            );
+
+            Student liselotte = new Student(
+                    "Liselotte",
+                    "lsnijders@gmail.com",
+                    LocalDate.of(1988, Month.SEPTEMBER, 29)
+            );
+
+            Student alex = new Student(
+                    "Alex",
+                    "alex@gmail.com",
+                    LocalDate.of(2000, Month.MARCH, 22)
             );
 
             repository.saveAll(
-                    List.of(mariam, felix)
+                    List.of(mariam, felix, liselotte, alex)
             );
         };
     }
